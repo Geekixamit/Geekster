@@ -9,6 +9,12 @@ class ReverseNum
     
     System.out.println("Original Number: " + num);
 
+    int revNum = reverseNumber(num);
+
+    System.out.println("Reversed Number: " + revNum);
+  }
+
+  public static int reverseNumber(int num){
     int reverseNum = 0;
     // run loop until num becomes 0
     while(num != 0) {
@@ -20,7 +26,6 @@ class ReverseNum
       // remove the last digit from num
       num /= 10;
     }
-
-    System.out.println("Reversed Number: " + reverseNum);
+    return reverseNum;
   }
 }
